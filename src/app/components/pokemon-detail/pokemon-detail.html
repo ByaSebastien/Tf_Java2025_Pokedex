@@ -1,0 +1,4 @@
+@if(pokemonDetail()) {
+<h2>{{pokemonDetail()?.name}}</h2>
+<img [src]="pokemonDetail()!.sprites.other.dream_world.front_default" [alt]="pokemonDetail()!.name">
+}

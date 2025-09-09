@@ -1,0 +1,5 @@
+<button (click)="previous.emit()" [disabled]="!pokemonResult().previous">⬅️</button>
+<button (click)="next.emit()" [disabled]="!pokemonResult().next">➡️</button>
+@for (p of pokemonResult().results; track p.name) {
+  <p (click)="selectPokemon.emit(p.url)">{{ p.name }}</p>
+}

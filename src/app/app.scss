@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  header {
+    text-align: center;
+    padding: 1em;
+    background-color: darkcyan;
+  }
+
+  main {
+    flex: 1;
+    padding: 1em;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1em;
+    background-color: darkcyan;
+  }
+}

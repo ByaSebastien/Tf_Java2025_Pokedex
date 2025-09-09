@@ -1,0 +1,13 @@
+<input type="number" [(ngModel)]="idInput" (keydown.enter)="getPokemonById()">
+<button (click)="getPokemonById()">Get</button>
+<div class="content">
+  <app-pokemon-detail
+    [pokemonDetail]="pokemonDetail"
+  ></app-pokemon-detail>
+  <app-pokemon-list
+    [pokemonResult]="pokemonResult"
+    (previous)="previous()"
+    (next)="next()"
+    (selectPokemon)="getPokemon($event)"
+  ></app-pokemon-list>
+</div>
